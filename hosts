@@ -1,0 +1,8 @@
+######################################
+# Ansible Testing Node #
+######################################
+[testnode]
+ansible-test.deltakedu.corp
+ansbltower-ob-1d.deltakedu.corp
+soe-rhel8-minimal.collegis.corp
+rhel8-testing.collegis.corp

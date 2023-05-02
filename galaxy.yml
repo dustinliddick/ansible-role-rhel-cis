@@ -1,0 +1,19 @@
+---
+namespace: dustinliddick
+name: rhel_cis
+version: 1.0.0
+readme: README.md
+authors:
+  - Dustin Liddick <dustin.liddick@collegiseducation.com>
+description: Apply the DISA RHEL CIS [Collegis Eduation](https://collegiseducation.com/).
+license_file: 'LICENSE'
+tags:
+  - system
+  - security
+  - CIS
+  - hardening
+dependencies:
+repository: https://gitlab.collegiseducation.com/dustinliddick/ansible-role-rhel-cis.git
+documentation: https://gitlab.collegiseducation.com/engineering_server_team/documentation.git
+homepage: https://collegiseducation.com
+build_ignore: []
