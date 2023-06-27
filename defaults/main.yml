@@ -477,9 +477,9 @@ rhel8cis_warning_banner: |
 ## Section4 vars
 
 rhel8cis_auditd:
-    space_left_action: email
+    space_left_action: SYSLOG
     action_mail_acct: root
-    admin_space_left_action: halt
+    admin_space_left_action: SYSLOG
     max_log_file_action: ROTATE
 
 rhel8cis_logrotate: "daily"
