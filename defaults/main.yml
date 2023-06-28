@@ -33,7 +33,7 @@ benchmark: RHEL8-CIS
 benchmark_version: v2.0.0
 
 # Whether to skip the reboot
-skip_reboot: true
+skip_reboot: false
 
 #### Basic external goss audit enablement settings ####
 #### Precise details - per setting can be found at the bottom of this file ####
@@ -582,7 +582,7 @@ rhel8cis_pam_faillock:
     pwhash: sha512
 
 # 5.2.5 SSH LogLevel setting. Options are INFO or VERBOSE
-rhel8cis_ssh_loglevel: INFO
+rhel8cis_ssh_loglevel: VERBOSE
 
 # 5.2.19 SSH MaxSessions setting. Must be 10 or less
 rhel8cis_ssh_maxsessions: 10
