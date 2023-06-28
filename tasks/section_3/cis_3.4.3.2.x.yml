@@ -62,13 +62,13 @@
 - name: "3.4.3.2.3 | PATCH | Ensure iptables rules exist for all open ports"
   block:
       - name: "3.4.3.2.3 | AUDIT | Ensure iptables rules exist for all open ports | Get list of TCP open ports"
-        shell: netstat -ant |grep "tcp.*LISTEN" | awk '{ print $4 }'| sed 's/.*://'
+        ansible.builtin.shell: netstat -ant |grep "tcp.*LISTEN" | awk '{ print $4 }'| sed 's/.*://'
         changed_when: false
         failed_when: false
         register: rhel8cis_3_4_3_2_3_otcp
 
       - name: "3.4.3.2.3 | AUDIT | Ensure iptables rules exist for all open ports | Get the list of udp open ports"
-        shell: netstat -ant |grep "udp.*LISTEN" | awk '{ print $4 }'| sed 's/.*://'
+        ansible.builtin.shell: netstat -ant |grep "udp.*LISTEN" | awk '{ print $4 }'| sed 's/.*://'
         changed_when: false
         failed_when: false
         register: rhel8cis_3_4_3_2_3_oudp
@@ -153,7 +153,7 @@
       - rule_3.4.3.2.5
 
 - name: "3.4.3.2.6 | PATCH | Ensure iptables service is enabled and active"
-  service:
+  ansible.builtin.service:
       name: iptables
       enabled: true
       state: started
