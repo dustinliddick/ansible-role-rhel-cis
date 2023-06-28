@@ -33,7 +33,7 @@ benchmark: RHEL8-CIS
 benchmark_version: v2.0.0
 
 # Whether to skip the reboot
-skip_reboot: false
+skip_reboot: true
 
 #### Basic external goss audit enablement settings ####
 #### Precise details - per setting can be found at the bottom of this file ####
@@ -85,7 +85,7 @@ rhel8cis_rule_1_1_5_4: true
 rhel8cis_rule_1_1_6_1: true
 rhel8cis_rule_1_1_6_2: true
 rhel8cis_rule_1_1_6_3: true
-rhel8cis_rule_1_1_6_4: false
+rhel8cis_rule_1_1_6_4: true
 rhel8cis_rule_1_1_7_1: true
 rhel8cis_rule_1_1_7_2: true
 rhel8cis_rule_1_1_7_3: true
@@ -93,7 +93,7 @@ rhel8cis_rule_1_1_7_4: true
 rhel8cis_rule_1_1_7_5: true
 rhel8cis_rule_1_1_8_1: true
 rhel8cis_rule_1_1_8_2: true
-rhel8cis_rule_1_1_8_3: false
+rhel8cis_rule_1_1_8_3: true
 rhel8cis_rule_1_1_18: true
 rhel8cis_rule_1_1_19: true
 rhel8cis_rule_1_1_20: true
@@ -106,7 +106,7 @@ rhel8cis_rule_1_2_3: true
 rhel8cis_rule_1_2_4: true
 rhel8cis_rule_1_3_1: true
 rhel8cis_rule_1_3_2: true
-rhel8cis_rule_1_4_1: false
+rhel8cis_rule_1_4_1: true
 rhel8cis_rule_1_4_2: true
 rhel8cis_rule_1_4_3: true
 rhel8cis_rule_1_5_1: true
@@ -344,7 +344,7 @@ rhel8cis_rule_6_2_4: true
 rhel8cis_rule_6_2_5: true
 rhel8cis_rule_6_2_6: true
 rhel8cis_rule_6_2_7: true
-rhel8cis_rule_6_2_8: false
+rhel8cis_rule_6_2_8: true
 rhel8cis_rule_6_2_9: true
 rhel8cis_rule_6_2_10: true
 rhel8cis_rule_6_2_11: true
@@ -422,7 +422,7 @@ rhel8cis_bootloader_password: random
 rhel8cis_set_boot_pass: false
 
 # 1.9 patch system
-rhel8cis_apply_installed_kernel_limit: true
+rhel8cis_apply_installed_kernel_limit: false
 rhel8cis_installed_kernel_limit: 2
 
 # 1.10/1.11 Set crypto policy (LEGACY, DEFAULT, FUTURE, FIPS)
@@ -435,7 +435,7 @@ rhel8cis_crypto_policy_module: ''
 rhel8cis_is_router: false
 
 # IPv6 required
-rhel8cis_ipv6_required: false
+rhel8cis_ipv6_required: true
 
 rhel8cis_ipv6_sysctl_force: true
 
