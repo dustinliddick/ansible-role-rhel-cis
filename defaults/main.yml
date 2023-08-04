@@ -255,7 +255,7 @@ rhel8cis_rule_4_2_1_5: true
 rhel8cis_rule_4_2_1_6: true
 rhel8cis_rule_4_2_1_7: true
 rhel8cis_rule_4_2_2_1_1: true
-rhel8cis_rule_4_2_2_1_2: true
+rhel8cis_rule_4_2_2_1_2: false
 rhel8cis_rule_4_2_2_1_3: true
 rhel8cis_rule_4_2_2_1_4: true
 rhel8cis_rule_4_2_2_2: true
@@ -301,7 +301,7 @@ rhel8cis_rule_5_3_1: true
 rhel8cis_rule_5_3_2: true
 rhel8cis_rule_5_3_3: true
 rhel8cis_rule_5_3_4: true
-rhel8cis_rule_5_3_5: true
+rhel8cis_rule_5_3_5: false
 rhel8cis_rule_5_3_6: true
 rhel8cis_rule_5_3_7: true
 rhel8cis_rule_5_4_1: true
@@ -519,8 +519,35 @@ rhel8cis_nft_tables_tablename: filter
 rhel8cis_nft_tables_autochaincreate: true
 
 # Warning Banner Content (issue, issue.net, motd)
+rhel8cis_motd_banner: |
+    Managed by Collegis Education, LLC
+# End Banner
+
 rhel8cis_warning_banner: |
-    Authorized uses only. All activity may be monitored and reported.
+    /------------------------------------------------------------------------\
+    |                       *** NOTICE TO USERS ***                          |
+    |                                                                        |
+    | This computer system is the private property of Collegis Education     |
+    | It is for authorized use only.                                         |
+    |                                                                        |
+    | Users (authorized or unauthorized) have no explicit or implicit        |
+    | expectation of privacy.                                                |
+    |                                                                        |
+    | Any or all uses of this system and all files on this system may be     |
+    | intercepted, monitored, recorded, copied, audited, inspected, and      |
+    | disclosed to Collegis Education,your employer, to authorized site,     |
+    | government, and law enforcement personnel, as well as authorized       |
+    | officials of government agencies, both domestic and foreign.           |
+    |                                                                        |
+    | By using this system, the user consents to such interception,          |
+    | monitoring, recording, copying, auditing, inspection, and disclosure   |
+    | at the discretion of such personnel or officials.  Unauthorized or     |
+    | improper use of this system may result in civil and criminal penalties |
+    | and administrative or disciplinary action, as appropriate. By          |
+    | continuing to use this system you indicate your awareness of and       |
+    | consent to these terms and conditions of use. LOG OFF IMMEDIATELY if   |
+    | you do not agree to the conditions stated in this warning.             |
+    \------------------------------------------------------------------------/
 # End Banner
 
 ## Section4 vars
