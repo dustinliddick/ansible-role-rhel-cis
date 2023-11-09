@@ -88,10 +88,10 @@
       name: systemd-journald
       state: restarted
 
-- name: restart systemd_journal_upload
-  ansible.builtin.service:
-      name: systemd-journal-upload
-      state: restarted
+# - name: restart systemd_journal_upload
+#   ansible.builtin.service:
+#       name: systemd-journal-upload
+#       state: restarted
 
 - name: rhel8cis_grub2cfg
   ansible.builtin.shell: "grub2-mkconfig -o {{ grub_cfg.stat.lnk_source }}"
