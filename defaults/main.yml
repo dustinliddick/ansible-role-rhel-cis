@@ -335,7 +335,7 @@ rhel8cis_rule_6_1_10: true
 rhel8cis_rule_6_1_11: true
 rhel8cis_rule_6_1_12: true
 rhel8cis_rule_6_1_13: true
-rhel8cis_rule_6_1_14: true
+rhel8cis_rule_6_1_14: false
 rhel8cis_rule_6_1_15: true
 rhel8cis_rule_6_2_1: true
 rhel8cis_rule_6_2_2: true
